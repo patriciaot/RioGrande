@@ -34,9 +34,9 @@ public class Tutor extends Perfil implements IUsuario, ICalificaciones {
     @Override
     public void mostrarCalificaciones(){
         if (alumno != null) {
-            System.out.println("Calificación del alumno " + alumno.getNombre() + ": " + alumno.getCalificacion());
+            System.out.println("Calificación actual del alumno(a) " + alumno.getNombre() + ": " + alumno.getCalificacion());
         } else {
-            System.out.println("Este tutor no tiene un alumno asignado.");
+            System.out.println("Este tutor no tiene un alumno(a) asignado.");
         }
     }
     
@@ -46,7 +46,7 @@ public class Tutor extends Perfil implements IUsuario, ICalificaciones {
             alumno.guardarCalificacion(calificacion);
             System.out.println("Tutor ha actualizado la calificación de " + alumno.getNombre());
         } else {
-            System.out.println("No hay alumno para asignar calificación.");
+            System.out.println("No hay alumno(a) para asignar calificación.");
         }
     }
 }
